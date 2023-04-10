@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #282526;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #282526;
+        stroke-miterlimit: 10;
+        stroke-width: .9px;
+      }
+
+      .cls-2 {
+        letter-spacing: .03em;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: TenorSans, 'Tenor Sans';
+        font-size: 22.67px;
+      }
+
+      .cls-3 {
+        letter-spacing: .02em;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m146.26,192.99c-26.49,0-48.04-22.25-48.04-49.6s21.55-49.6,48.04-49.6,48.04,22.25,48.04,49.6-21.55,49.6-48.04,49.6Zm0-98.44c-26.07,0-47.29,21.91-47.29,48.85s21.21,48.85,47.29,48.85,47.29-21.91,47.29-48.85-21.21-48.85-47.29-48.85Z"/>
+  <text class="cls-2" transform="translate(139.03 133.2)"><tspan x="0" y="0">Y</tspan></text>
+  <text class="cls-3" transform="translate(139.03 167.19)"><tspan x="0" y="0">K</tspan></text>
+  <line class="cls-4" x1="135.26" y1="141.92" x2="157.25" y2="141.92"/>
+</svg>
