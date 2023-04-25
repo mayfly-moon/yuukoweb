@@ -83,7 +83,7 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
+  transition: 0.4s opacity;
 }
 
 .button:hover {
@@ -100,9 +100,11 @@ a:active {
   color: #ff5f5d;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
+  transition: 0.4s opacity;
 }
 
 .button.contact:hover {
+  opacity: 0.8;
   background-color: #ff5f5d;
   color: #fff;
 }
@@ -237,6 +239,13 @@ main {
   text-align: center;
 }
 
+#home-about .button {
+  display: block;
+  margin: auto;
+  max-width: fit-content;
+  text-align: center;
+}
+
 .dpicon {
   width: 100px;
 }
@@ -258,6 +267,59 @@ main {
   padding: 10px;
 }
 
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.column-10 {
+  width: 10%;
+  float: left;
+  padding: 15px;
+}
+
+.column-90 {
+  width: 90%;
+  float: left;
+  padding: 15px;
+}
+
+.column::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* animation */
+@keyframes color-change {
+  from { fill: #edc655; }
+  to { fill: #f76414; }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from { transform: translate (0, 50px); }
+  to { transform: translate(200px, 50px); }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 /* media queries */
 @media only screen and (min-width: 640px) {
   header {
@@ -270,6 +332,10 @@ main {
     float: right;
     margin-top: 4px;
   }
+
+  .col-md-6 {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -277,20 +343,20 @@ main {
     font-size: 18px;
   }
 
-  .col-md-6 {
-    width: 50%;
-  }
-
   #about-body h3 {
     margin-top: 0;
   }
-}
 
-@media only screen and (min-width: 1440px) {
   .col-lg-7 {
     width: 58.33%;
   }
 
+  .col-lg-5 {
+    width: 41.66%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   .container {
     max-width: 1200px;
     margin-left: auto;
