@@ -291,7 +291,6 @@ main {
   display: table;
 }
 
-
 /* animation */
 @keyframes color-change {
   from { fill: #edc655; }
