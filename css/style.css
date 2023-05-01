@@ -157,15 +157,14 @@ a.button {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 80px;
 }
 
 header {
   background-color: #f4f6ee;
-  text-align: center;
   display: inline-block;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   box-shadow: 1px 9px 28px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 9px 28px rgba(0, 0, 0, 0.1);
@@ -175,10 +174,6 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
 }
 
 nav > ul > li > a {
@@ -211,7 +206,7 @@ nav {
 }
 
 main {
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 #contact {
@@ -291,6 +286,51 @@ main {
   display: table;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 /* animation */
 @keyframes color-change {
   from { fill: #edc655; }
@@ -334,6 +374,22 @@ main {
 
   .col-md-6 {
     width: 50%;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
   }
 }
 
