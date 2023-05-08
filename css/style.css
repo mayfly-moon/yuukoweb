@@ -77,7 +77,7 @@ a:active {
 .button {
   display: inline-block;
   background-color: #ff5f5d;
-  color: #fff;
+  color: #2e2e2e;
   text-transform: uppercase;
   font-weight: 400;
   padding: 10px;
@@ -290,7 +290,8 @@ main {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
