@@ -27,7 +27,7 @@ h4 {
 }
 
 h1 {
-  font-size: 3.75 em;
+  font-size: 3.75em;
   font-weight: 700;
 }
 
@@ -343,7 +343,7 @@ nav > ul {
 }
 
 @keyframes cloud-move {
-  from { transform: translate (0, 50px); }
+  from { transform: translate(0, 50px); }
   to { transform: translate(200px, 50px); }
 }
 
